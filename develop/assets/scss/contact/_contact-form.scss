@@ -1,0 +1,58 @@
+.form {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px 40px;
+  z-index: 1;
+  background-color: $color-primary;
+
+  @include lg {
+    position: unset;
+  }
+
+  input,
+  textarea {
+    height: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem 0.7rem;
+    font-size: 1rem;
+    color: $color-darkFont;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  textarea {
+    height: 223px;
+    resize: none;
+    font-weight: 200;
+  }
+
+  &__information {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+
+  input.form__submit {
+    padding: 1rem 0;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    color: $color-primary;
+    background-color: #fff;
+    box-shadow: 5px 5px 6px #00000029;
+    border: none;
+    transition: 0.3s;
+    transition-property: color background-color;
+
+    &:hover {
+      background-color: $color-blackFont;
+      color: $color-brightFont;
+    }
+  }
+}

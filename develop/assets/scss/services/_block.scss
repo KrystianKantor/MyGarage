@@ -1,0 +1,53 @@
+.block-services {
+  min-width: 300px;
+  padding: 3rem 2.7rem;
+  position: relative;
+  margin-bottom: 4rem;
+  background-color: $color-blackFont;
+  transition: 1s;
+  transition-property: opacity;
+  opacity: 0;
+
+  &--visible {
+    opacity: 1;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 130%;
+    background-size: 50%;
+    opacity: 0.2;
+
+    &--engine {
+      background-image: url("./public/icons/engine-stroke.svg");
+      background-size: 70%;
+    }
+    &--gears {
+      background-image: url("./public/icons/gear-white.svg");
+    }
+    &--suspension {
+      background-image: url("./public/icons/bump-car-stroke.svg");
+      background-size: 60%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2.5rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: $color-white;
+    z-index: 1;
+    font-weight: 600;
+  }
+
+  &__text {
+    font-size: 1rem;
+    color: $color-brightFont;
+  }
+}

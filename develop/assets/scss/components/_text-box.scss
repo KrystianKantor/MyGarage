@@ -1,0 +1,30 @@
+.text-box {
+  position: relative;
+  padding: 5rem 0;
+  z-index: 3;
+
+  @include md {
+    padding-top: 55vw;
+  }
+  @include sm {
+    padding-top: 12vw;
+  }
+
+  &__stamp {
+    margin-bottom: 2rem;
+  }
+
+  img {
+    height: 3.5rem;
+  }
+
+  &__head {
+    font-size: 1.7rem;
+    margin-bottom: 11px;
+  }
+
+  &__paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

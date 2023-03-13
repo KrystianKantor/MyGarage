@@ -1,0 +1,19 @@
+@import "../components/headline-section";
+@import "./block";
+@import "../components/button";
+
+.services {
+  width: 100%;
+  margin: 6rem 0 4rem;
+
+  @include sm {
+    margin: 4rem 0 2rem;
+  }
+}
+
+.button--services {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  transform: translateY(50%);
+}

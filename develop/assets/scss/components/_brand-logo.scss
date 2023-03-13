@@ -1,0 +1,10 @@
+.brand-logo {
+  font-size: 2rem;
+  font-family: $font-family-logo;
+  color: $color-white;
+  text-decoration: underline;
+
+  &:hover {
+    color: $color-white;
+  }
+}

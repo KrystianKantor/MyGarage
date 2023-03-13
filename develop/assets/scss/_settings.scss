@@ -1,0 +1,77 @@
+html {
+  font-size: $font-size-base;
+
+  @include sm {
+    font-size: $font-size-mobile;
+  }
+
+  @media (min-width: $maxFluid) {
+    font-size: $font-size-max;
+  }
+}
+
+body,
+textarea {
+  font-family: $font-family-main;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    color: unset;
+  }
+}
+
+.main {
+  max-width: $maxFluid;
+  margin: 60px auto 0;
+  background-color: $color-grey;
+  overflow-x: hidden;
+}
+
+input,
+textarea {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.container {
+  @include sm {
+    padding: 0 15px;
+  }
+}
+
+.container--flowing-background {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 150%;
+    height: 100%;
+    background-color: $color-primary;
+  }
+}
+
+.container--flowing-background-white {
+  &::after {
+    background-color: $color-white;
+  }
+}
+
+.container--flowing-background-right {
+  &::after {
+    left: unset;
+    right: 0;
+  }
+}

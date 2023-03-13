@@ -1,0 +1,30 @@
+@import "./banner__slogan-box";
+
+.banner {
+  display: flex;
+  align-items: center;
+  max-width: $maxFluid;
+  width: 100%;
+  min-height: 40rem;
+  margin: 0 auto;
+  background-image: url(./public/images/background.jpg);
+  background-repeat: no-repeat;
+  background-position-y: -10%;
+  background-size: cover;
+  transition: 1s;
+  transition-property: background-position-y;
+
+  @include lg {
+    background-position-x: center;
+    background-position-y: 0;
+    background-size: 150%;
+  }
+
+  @include sm {
+    background-size: 300%;
+  }
+
+  &--scrolled {
+    background-position-y: 10%;
+  }
+}

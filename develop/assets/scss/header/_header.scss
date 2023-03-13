@@ -1,0 +1,22 @@
+@import "../components/brand-logo";
+@import "./nav-bar";
+@import "./header_icons";
+@import "./header_menu-button";
+
+.header {
+  width: 100%;
+  padding: 2rem 0px;
+  background-color: #111;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  transition: 0.2s;
+
+  &--fold {
+    padding: 1.5rem 0px;
+  }
+
+  @include sm {
+    padding: 1.3rem 0px;
+  }
+}

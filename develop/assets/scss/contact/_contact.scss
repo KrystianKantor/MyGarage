@@ -1,0 +1,13 @@
+@import "../components/text-box";
+@import "./contact-form";
+
+.contact {
+  color: $color-darkFont;
+  margin-bottom: 5rem;
+
+  .text-box {
+    @include md {
+      padding-top: 5rem;
+    }
+  }
+}

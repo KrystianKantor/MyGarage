@@ -1,0 +1,32 @@
+// colors
+$color-white: #fff;
+$color-primary: #ff6600;
+$color-grey: #dfdfdf;
+$color-darkFont: #707070;
+$color-brightFont: #f6f6f6;
+$color-blackFont: #111111;
+$color-bannerBackground: #11111165;
+$color-servicesBackground: #f6f7f8;
+$color-bannerFont: #d0d3d4;
+$color-dots: #d7e1fe;
+
+// breakpoints
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$xxxl: 1600px;
+$maxFluid: 1920px;
+
+// font--size
+$font-size-mobile: calc(11px + 0.6vw);
+$font-size-base: calc(10px + 0.5vw);
+$font-size-max: 18px;
+
+// fonts family
+$font-family-main: "Prompt", arial, sans-serif;
+$font-family-main-light: "Prompt-light", arial, sans-serif;
+$font-family-logo: "Orbitron", arial, sans-serif;
+$font-family-bold: "helvetica-bold", arial, sans-serif;

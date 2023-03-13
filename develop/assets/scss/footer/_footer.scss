@@ -1,0 +1,36 @@
+@import "../components/nav-list";
+@import "../components/map";
+// @import "./footer_contact";
+
+.footer {
+  padding: 4rem 0 1.5rem;
+  background-color: $color-blackFont;
+  color: $color-brightFont;
+
+  &__columns-wrapper {
+    margin-bottom: 2rem;
+  }
+
+  &__head {
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+    &--logo {
+      font-family: "Orbitron";
+      text-transform: unset;
+    }
+    &--map {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__copyrights {
+    padding: 0.5rem 0;
+    background-color: $color-brightFont;
+    color: $color-blackFont;
+    font-size: 0.8rem;
+  }
+}

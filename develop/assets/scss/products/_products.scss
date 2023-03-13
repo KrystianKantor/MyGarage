@@ -1,0 +1,10 @@
+@import "./blocks";
+@import "../components/button";
+
+.products {
+  padding-bottom: 80px;
+
+  @include lg {
+    padding-bottom: 40px;
+  }
+}

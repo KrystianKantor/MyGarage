@@ -1,0 +1,13 @@
+@import "./flowing-section__image";
+@import "../components/text-box";
+
+.flowing-section {
+  position: relative;
+  padding-top: 5rem;
+  margin-bottom: 6rem;
+  color: $color-brightFont;
+
+  @include lg {
+    padding-top: 0rem;
+  }
+}

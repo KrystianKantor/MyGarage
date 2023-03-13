@@ -1,0 +1,7 @@
+node_modules
+/assets/fonts
+/assets/icons
+/assets/images
+/build
+/dist
+package-lock.json

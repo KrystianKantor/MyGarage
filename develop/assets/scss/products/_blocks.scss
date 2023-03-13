@@ -1,0 +1,92 @@
+.product-block {
+  position: relative;
+  transform: translateX(-150%);
+  z-index: 1;
+  display: flex;
+  min-width: 300px;
+  padding: 0;
+  margin-bottom: 3.5rem;
+  background-color: $color-blackFont;
+  transition: 1s;
+  transition-property: transform;
+
+  @include sm {
+    flex-direction: column;
+  }
+
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;
+    transform: translateX(150%);
+
+    .button {
+      left: unset;
+      right: 5%;
+
+      @include md {
+        right: 3rem;
+      }
+    }
+  }
+
+  &--visible,
+  &--visible:nth-of-type(even) {
+    transform: translateX(0);
+  }
+
+  &__picture {
+    width: 30%;
+
+    @include md {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+
+      @include md {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__text-wrapper {
+    width: 70%;
+    padding: 3rem;
+
+    @include md {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  &__description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: $color-brightFont;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: $color-white;
+    z-index: 1;
+  }
+}
+
+.button--product-block {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  transform: translateY(50%);
+
+  @include md {
+    left: 3rem;
+  }
+}

@@ -1,0 +1,43 @@
+.banner {
+  &__slogan-box {
+    position: relative;
+    padding: 2.6rem;
+    background-color: #111111b9;
+    color: $color-bannerFont;
+  }
+
+  &__headline {
+    margin-bottom: 1rem;
+    font-size: 2.6rem;
+    line-height: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  &__button {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    transform: translateY(50%);
+    padding: 10px 55px;
+    background-color: rgb(36, 35, 35);
+    color: $color-brightFont;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    border: 2px solid #fff;
+    transition: 0.4s;
+    transition-property: background-color, color, border;
+
+    &:hover {
+      background-color: $color-brightFont;
+      color: $color-primary;
+      border: 2px solid $color-brightFont;
+    }
+  }
+}
